@@ -23,9 +23,12 @@
 
 `git clone https://github.com/Mangoblock/codecamp2019.git`
 
+Note: make sure clone the Mangoblock url instead of the forked one. Otherwise, the branch created below won't show up in Mangoblock to be reviewed, even though PR will be there.
+
 ### Check local branch
 
 `git branch`
+
 
 ### Check all branches including remote branch
 
@@ -36,6 +39,8 @@
 ### Make your own branch
 
 `git branch {your branch name}`
+
+Note: you'll have to create your first file before creating a branch.
 
 ### Move to your branch
 
@@ -48,6 +53,8 @@
 
 `git push -u origin {your branch name}`
 
+Note: you'll need add remote before this by `git remote -v` and `git remote add origin git@github.com:Mangoblock/codecamp2019.git`
+
 ## After you make some changes on your branch. Your can check the status.
 
 `git status`
@@ -55,6 +62,8 @@
 ### Add the file changed to the repository
 
 `git add {file name with path}`
+
+Note: need add in dir to make sure it shows up correctly in remote `git add codecamp2019/`
 
 ### After you added all the files which you want to push to your remote branch
 
@@ -64,8 +73,5 @@
 
 `git push`
 
-
-
-
-
+Note: to make it more certain, use `git push origin your_branch`
 
